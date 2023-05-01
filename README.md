@@ -153,7 +153,7 @@ vci.osc.RegisterMethod('/vci/baton/mode', exampleMode, {vci.osc.types.Int32})
 詳しくは [バーチャルキャスト公式Wiki: ExportOsc(外部との OSC 通信)](https://wiki.virtualcast.jp/wiki/vci/script/reference/exportosc) をご覧ください。  
 
 ## ライセンス
-このプラグインは MIT ライセンスです。  
+このプラグインは GNU General Public License v3.0 ライセンスです。  
 
 # multiBatonOSC: MultiCommentViewer plugin for transferring comments and related information by OSC.
 This is a plugin that allows you to send comments and related information received from MultiCommentViewer to VirtualcCast using OSC (Open Sound Control) protocol.
@@ -311,4 +311,4 @@ This is an example of a script that receives the transfer mode from VCI. The fun
 For more details, please see [VirtualCast Official Wiki: ExportOsc(外部との OSC 通信)](https://wiki.virtualcast.jp/wiki/vci/script/reference/exportosc)  
 
 ## License
-This plugin is licensed under the MIT License.
+This plugin is licensed under the GNU General Public License v3.0 License.
