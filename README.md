@@ -78,7 +78,7 @@ OSC 送信形式は2種類
    - SHOWROOM  
      - 全コメント: Showroom  
    - YouTube ライブ  
-     - 一般コメント: Youtube  
+     - 一般コメント: Youtubelive  
      - スーパーチャット: YoutubeSuperchat  
      - メンバーシップ: YoutubeMembership  
    - TwitCasting  
@@ -229,28 +229,28 @@ This section explains the types and examples of the arguments that are used in t
 4. `str_commentSource`  
    This is a comment source (String ASCII Letters). Some examples are:
    - niconico Live  
-    - User comment: Nicolive
-    - Anonymous user comment: Nicolive184
-    - Operator comment (default): NicoliveOperator
-    - Some specific operator comment: NicoliveAd, NicoliveInfo, NicoliveGift, NicoliveSpi, NicoliveEmotion
+     - User comment: Nicolive
+     - Anonymous user comment: Nicolive184
+     - Operator comment (default): NicoliveOperator
+     - Some specific operator comment: NicoliveAd, NicoliveInfo, NicoliveGift, NicoliveSpi, NicoliveEmotion
    - SHOWROOM  
-    - All comments: Showroom  
+     - All comments: Showroom  
    - YouTube Live  
-    - User comment: Youtube  
-    - Super chat: YoutubeSuperchat  
-    - Membership: YoutubeMembership  
+     - User comment: Youtubelive  
+     - Super chat: YoutubeSuperchat  
+     - Membership: YoutubeMembership  
    - TwitCasting  
-    - User comment: Twitcasting  
-    - Gift: TwitcastingGift  
+     - User comment: Twitcasting  
+     - Gift: TwitcastingGift  
    - Twitch  
-    - All comments: Twitch  
+     - All comments: Twitch  
    - Openrec  
-    - User comment: Openrec  
-    - Stamp: OpenrecStamp  
-    - Yell (Gift): OpenrecYell  
+     - User comment: Openrec  
+     - Stamp: OpenrecStamp  
+     - Yell (Gift): OpenrecYell  
    - Whowatch  
-    - User comment: Whowatch  
-    - Gift: WhowatchGift  
+     - User comment: Whowatch  
+     - Gift: WhowatchGift  
 
 5. `int_transferMode`  
    This is a Transfer mode (Int32 32bit Integer). Some examples are:
