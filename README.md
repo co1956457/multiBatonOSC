@@ -79,8 +79,8 @@ OSC 送信形式は2種類
      - 全コメント: Showroom  
    - YouTube ライブ  
      - 一般コメント: Youtubelive  
-     - スーパーチャット: YoutubeSuperchat  
-     - メンバーシップ: YoutubeMembership  
+     - スーパーチャット: YoutubeliveSuperchat  
+     - メンバーシップ: YoutubeliveMembership  
    - TwitCasting  
      -  一般コメント: Twitcasting  
      - ギフト: TwitcastingGift  
@@ -237,8 +237,8 @@ This section explains the types and examples of the arguments that are used in t
      - All comments: Showroom  
    - YouTube Live  
      - User comment: Youtubelive  
-     - Super chat: YoutubeSuperchat  
-     - Membership: YoutubeMembership  
+     - Super chat: YoutubeliveSuperchat  
+     - Membership: YoutubeliveMembership  
    - TwitCasting  
      - User comment: Twitcasting  
      - Gift: TwitcastingGift  
