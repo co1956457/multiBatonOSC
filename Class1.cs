@@ -1,4 +1,4 @@
-﻿// https://github.com/CommentViewerCollection/MultiCommentViewer    BouyomiPlugin を参考に作成    GPL-3.0 License
+// https://github.com/CommentViewerCollection/MultiCommentViewer    BouyomiPlugin を参考に作成    GPL-3.0 License
 // https://github.com/ValdemarOrn/SharpOSC                          SharpOSC から必要な部分だけ   MIT License
 //
 // SPDX-License-Identifier: GPL-3.0
@@ -6,6 +6,7 @@
 // 参考ににした MultiCommentViewer の BouyomiPlugin が GPL-3.0 なので。
 //
 // 20230501 v1.0 Taki (co1956457)
+// 20230516 v1.1 fixed NicoliveAd were not transferred, deleted "/spi " and "\"".  ニコニ広告が転送されない不具合を修正、ニコ生運営コメントの文字列「/spi 」と「"」を削除
 
 using System;
 using System.ComponentModel.Composition;    // [Export(typeof(IPlugin))]
@@ -92,7 +93,7 @@ namespace multiBatonOSCPlugin
         // {
         //     get { return "v1.0"; }
         // }
-        public string Version => "v1.0";
+        public string Version => "v1.1";
 
         /// <summary>
         /// プラグインの名前
@@ -361,7 +362,7 @@ namespace multiBatonOSCPlugin
                             break;
                         case NicoMessageType.Ad:
                             // コメントの時間を取得し UTC に変換して比較 直近1分から転送可
-                            postedAtUTC = TimeZoneInfo.ConvertTimeToUtc((NicoMessage as INicoInfo).PostedAt);
+                            postedAtUTC = TimeZoneInfo.ConvertTimeToUtc((NicoMessage as INicoAd).PostedAt);
                             (isSend, dt_lastDate) = CompareTime(dt_lastDate, postedAtUTC);
 
                             cmntSource = "NicoliveAd";
@@ -392,7 +393,9 @@ namespace multiBatonOSCPlugin
                             comment = (NicoMessage as INicoSpi).Text;
                             // 「/spi 」の文字列はデフォルトで入る
                             // /spi "「***」がリクエストされました"
-                            break;
+                            comment = comment.Remove(0, 5);         // 先頭5文字「/spi 」削除
+                            comment = comment.Replace("\"", "");    // 「"」削除
+                        break;
                         case NicoMessageType.Emotion:
                             // コメントの時間を取得し UTC に変換して比較 直近1分から転送可
                             postedAtUTC = TimeZoneInfo.ConvertTimeToUtc((NicoMessage as INicoEmotion).PostedAt);
