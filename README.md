@@ -1,7 +1,7 @@
 # multiBatonOSC: マルチコメントビューアで受け取ったコメントや関連情報を OSC で転送する プラグイン
 このプラグインを使うと、 マルチコメントビューアで受け取ったコメントや関連情報を VirtualCast に OSC (Open Sound Control) で送信することができるようになります。  
   
-![multiBatonImage](/docs/multiBatonImageJp.png)
+![multiBatonImage](/docs/multiBatonImage.png)
 
 ## 必要環境
 1. マルチコメントビューア  
@@ -158,7 +158,7 @@ vci.osc.RegisterMethod('/vci/baton/mode', exampleMode, {vci.osc.types.Int32})
 # multiBatonOSC: MultiCommentViewer plugin for transferring comments and related information by OSC.
 This is a plugin that allows you to send comments and related information received from MultiCommentViewer to VirtualcCast using OSC (Open Sound Control) protocol.
   
-![multiBatonImage](/docs/multiBatonImageEn.png)
+![multiBatonImage](/docs/multiBatonImage.png)
 
 ## Requirements
 1. MultiCommentViewer  
